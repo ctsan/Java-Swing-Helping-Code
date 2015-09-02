@@ -38,7 +38,7 @@ public class MyFrame extends JFrame implements ActionListener{
 	private void makeThings() {
 		// Add Initial Items Here
 		canvas.addNewItem(new Square(0,0,20, Color.DARK_GRAY, canvas));
-		
+		canvas.requestFocus();
 		// Add an Item after 3 seconds
 		// This is an Anonymous class. The idea is: override some of the default's class methods.
 		new MyCanvasAdjustingInterval(canvas,3000,1) {
